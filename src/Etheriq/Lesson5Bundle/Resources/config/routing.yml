@@ -1,3 +1,7 @@
 etheriq_lesson5_homepage:
     pattern:  /hello/{name}
     defaults: { _controller: EtheriqLesson5Bundle:Default:index }
+
+etheriq_les5_index:
+    pattern:  /
+    defaults: { _controller: EtheriqLesson5Bundle:HomePage:index }

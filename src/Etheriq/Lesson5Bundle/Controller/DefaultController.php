@@ -8,6 +8,6 @@ class DefaultController extends Controller
 {
     public function indexAction($name)
     {
-        return $this->render('EtheriqLesson5Bundle:Default:index.html.twig', array('name' => $name));
+        return $this->render('EtheriqLesson5Bundle:Default:hello.html.twig', array('name' => $name));
     }
 }
