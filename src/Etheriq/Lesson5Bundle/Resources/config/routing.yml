@@ -5,3 +5,7 @@ etheriq_lesson5_homepage:
 etheriq_les5_index:
     pattern:  /
     defaults: { _controller: EtheriqLesson5Bundle:HomePage:index }
+
+etheriq_les5_slider:
+    pattern:  /slider
+    defaults: { _controller: EtheriqLesson5Bundle:Pages:showSlider }
