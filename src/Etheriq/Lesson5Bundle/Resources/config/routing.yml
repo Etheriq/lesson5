@@ -9,3 +9,15 @@ etheriq_les5_index:
 etheriq_les5_slider:
     pattern:  /slider
     defaults: { _controller: EtheriqLesson5Bundle:Pages:showSlider }
+
+etheriq_les5_login:
+    pattern:  /login
+    defaults: { _controller: EtheriqLesson5Bundle:Pages:showLoginForm }
+
+etheriq_les5_contact:
+    pattern:  /contact
+    defaults: { _controller: EtheriqLesson5Bundle:Pages:showContact }
+
+etheriq_les5_about:
+    pattern:  /about
+    defaults: { _controller: EtheriqLesson5Bundle:Pages:showAbout }

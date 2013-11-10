@@ -19,4 +19,19 @@ class PagesController extends Controller
         return $this->render('EtheriqLesson5Bundle:Pages:slider.html.twig');
     }
 
+    public function showLoginFormAction()
+    {
+        return $this->render('EtheriqLesson5Bundle:Pages:login.html.twig');
+    }
+
+    public function showContactAction()
+    {
+        return $this->render('EtheriqLesson5Bundle:Pages:contact.html.twig');
+    }
+
+    public function showAboutAction()
+    {
+        return $this->render('EtheriqLesson5Bundle:Pages:about.html.twig');
+    }
+
 } 
