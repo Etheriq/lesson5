@@ -1,0 +1,13 @@
+{% extends 'EtheriqLesson5Bundle::index.html.twig' %}
+
+{% block title %}
+    Список статей
+{% endblock title %}
+
+{% block body %}
+
+    <h4>Список статей и их популярность:</h4>
+
+    {{ render(controller('EtheriqLesson5Bundle:MyRenderTwig:showSeveralArticles', { 'count': count } )) }}
+
+{% endblock body %}

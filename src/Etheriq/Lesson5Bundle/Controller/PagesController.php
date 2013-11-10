@@ -34,4 +34,9 @@ class PagesController extends Controller
         return $this->render('EtheriqLesson5Bundle:Pages:about.html.twig');
     }
 
+    public function showArticlesAction($articleCount)
+    {
+        return $this->render('EtheriqLesson5Bundle:Pages:articles.html.twig', array('count' => $articleCount));
+    }
+
 } 

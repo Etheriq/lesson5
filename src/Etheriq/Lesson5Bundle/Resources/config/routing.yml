@@ -21,3 +21,9 @@ etheriq_les5_contact:
 etheriq_les5_about:
     pattern:  /about
     defaults: { _controller: EtheriqLesson5Bundle:Pages:showAbout }
+
+etheriq_les5_articles:
+    pattern:  /articles/{articleCount}
+    defaults: { _controller: EtheriqLesson5Bundle:Pages:showArticles }
+    requirements:
+        articleCount: \d+
