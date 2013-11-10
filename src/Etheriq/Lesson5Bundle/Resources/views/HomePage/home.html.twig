@@ -1,0 +1,87 @@
+{% extends 'EtheriqLesson5Bundle::index.html.twig' %}
+
+{% block title %}
+Домашняя страница
+{% endblock title %}
+
+{% block body %}
+
+       <table class="table table-condensed table-striped table-bordered" id="infoTable">
+           <thead>
+            <tr>
+                <th>№</th>
+                <th>Название ссылки</th>
+                <th>Адресс ссылки</th>
+                <th>Описание</th>
+            </tr>
+           </thead>
+           <tbody>
+           <tr>
+               <td>1</td>
+               <td>Главная</td>
+               <td>/</td>
+               <td>Домашняя страница. (Рабочей дирректорией евляется web/ соответственно все ссылки будут вида web/slider, web/contact и т.д.</td>
+           </tr>
+
+           <tr>
+               <td>2</td>
+               <td>ДЗ Lesson5</td>
+               <td>-</td>
+               <td>Выпадающее меню с ссылками на различные задания к домашней работе</td>
+           </tr>
+
+           <tr>
+               <td>3</td>
+               <td>Slider</td>
+               <td>/slider</td>
+               <td>Использую возможности bootstrap создал просто и красивый слайдер</td>
+           </tr>
+
+           <tr>
+               <td>4</td>
+               <td>Page 2-2</td>
+               <td>-</td>
+               <td>Выпадающее меню с ссылками на Contact и About</td>
+           </tr>
+
+           <tr>
+               <td>5</td>
+               <td>Contact</td>
+               <td>/contact</td>
+               <td>Контакты</td>
+           </tr>
+
+           <tr>
+               <td>6</td>
+               <td>About</td>
+               <td>/about</td>
+               <td>О сайте</td>
+           </tr>
+
+           <tr>
+               <td>7</td>
+               <td>Статьи</td>
+               <td>/articles/X</td>
+               <td>Шаблон с генерацией случайных статей. Х - любое положительное число - количество сгенерированных случайным образом статей и их популярностью.</td>
+           </tr>
+
+           <tr>
+               <td>8</td>
+               <td>кнопка Войти</td>
+               <td>/login</td>
+               <td>Простой и красивый шаблон страницы с формой авторизации.</td>
+           </tr>
+
+
+           </tbody>
+       </table>
+
+{% endblock body %}
+
+{% block stylesheets %}
+    <style>
+        #infoTable {
+            margin-top: 50px;
+        }
+    </style>
+{% endblock %}
