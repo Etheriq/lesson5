@@ -1,16 +1,23 @@
-{% for article in countArticles %}
-
-    <div class="row">
-        <div class="span10">
-            <p>{{ article.articlesText }}</p>
-        </div>
-        <div class="span2">
-            Популярность: <span class="pull-right strong">{{ article.articlesPopularity }}%</span>
-            <div class="progress">
-                <div class="bar" style="width: {{ article.articlesPopularity }}%;"></div>
+{% if countArticles is defined %}
+    {{ "now"|date("d.m.Y") }}
+    {% for article in countArticles %}
+        <div class="row">
+            <div class="span10">
+                <p><b>{{ loop.index }}/{{ loop.length }}.</b> {{ article.articlesText|e('html') }}</p>
+            </div>
+            <div class="span2">
+                Популярность: <span class="pull-right strong">{{ article.articlesPopularity }}%</span>
+                <div class="progress">
+                    <div class="bar" style="width: {{ article.articlesPopularity }}%;"></div>
+                </div>
             </div>
         </div>
+        <hr>
+    {% endfor %}
+{% else %}
+    <div class="row">
+        <div class="well span6">
+            <p>Статей нету.</p>
+        </div>
     </div>
-    <hr>
-
-{% endfor %}
+{% endif %}
